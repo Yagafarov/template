@@ -2,7 +2,9 @@ import React from 'react'
 
 const FooterM = () => {
   return (
-    <div>FooterM</div>
+    <div class='text-center border-top border-bottom py-2'> 
+      Barcha huquqlar himoyalangan @anodra 
+    </div>
   )
 }
 
