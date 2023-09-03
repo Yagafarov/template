@@ -8,10 +8,10 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function NavbarM() {
   return (
-    <>
-      <Navbar expand='sm' className=" mb-3">
+    <div>
+      <Navbar expand='sm' className="mb-3 px-sm-5 bg-light" fixed="top"> 
         <Container fluid>
-          <Navbar.Brand href="#">Stupid docs</Navbar.Brand>
+          <Navbar.Brand href="/">Stupid docs</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-sm`}
@@ -20,7 +20,7 @@ function NavbarM() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
-              Stupid docs
+                Stupid docs
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -37,9 +37,7 @@ function NavbarM() {
                     Offis dasturlari
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Barchasi
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action5">Barchasi</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
               <Form className="d-flex">
@@ -55,7 +53,7 @@ function NavbarM() {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 }
 

@@ -9,12 +9,14 @@ import NavbarM from './components/NavbarM'
 import FooterM from './components/FooterM'
 import './App.css'
 
-const Layout =()=>{
+const Layout = () => {
   return (
     <>
-    <NavbarM/>
-    <Outlet/>
-    <FooterM/>
+      <NavbarM />
+      <div className='my-5 py-3'>
+        <Outlet />
+      </div>
+      <FooterM />
     </>
   )
 }
@@ -22,42 +24,41 @@ const Layout =()=>{
 const router = createBrowserRouter(
   [
     {
-      path:"/",
-      element: <Layout/>,
-      children:[
+      path: "/",
+      element: <Layout />,
+      children: [
         {
-          path:'/',
-          element:<Home/>
+          path: '/',
+          element: <Home />
         },
         {
-          path:'/posts',
-          element:<Posts/>
+          path: '/posts',
+          element: <Posts />
         },
         {
-          path:'/write',
-          element:<Write/>
+          path: '/write',
+          element: <Write />
         },
       ]
     },
     {
-      path:"/register",
-      element: <Register/>
+      path: "/register",
+      element: <Register />
     },
     {
-      path:"/login",
-      element: <Login/>
+      path: "/login",
+      element: <Login />
     },
   ]
 );
 
 const App = () => {
   return (
-   <>
-   <div className="container">
-
-   <RouterProvider  router={router} />
-   </div>
-   </>
+    <>
+      <div className="container">
+        <RouterProvider router={router} />
+      </div>
+    </>
   )
 }
 
