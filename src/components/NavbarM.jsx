@@ -25,8 +25,8 @@ function NavbarM() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Bosh sahifa</Nav.Link>
-                <Nav.Link href="#action2">Biz haqimizda</Nav.Link>
+                <Nav.Link href="/">Bosh sahifa</Nav.Link>
+                <Nav.Link href="/tutorial">Qo'llanma</Nav.Link>
                 <NavDropdown
                   title="Menyu"
                   id={`offcanvasNavbarDropdown-expand-sm`}
@@ -39,6 +39,7 @@ function NavbarM() {
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">Barchasi</NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link href="/about">Biz haqimizda</Nav.Link>
               </Nav>
               <Form className="d-flex">
                 <Form.Control
