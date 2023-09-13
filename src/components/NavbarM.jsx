@@ -44,11 +44,11 @@ function NavbarM() {
               <Form className="d-flex">
                 <Form.Control
                   type="search"
-                  placeholder="Search"
+                  placeholder="Post qidirish"
                   className="me-2"
-                  aria-label="Search"
+                  aria-label="Post qidirish"
                 />
-                <Button variant="outline-primary">Search</Button>
+                <Button variant="outline-primary">Qidirish</Button>
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
